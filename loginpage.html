@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <style>
+            body
+            {
+                background: url("abstract-unsaturated-very-light-blue-260nw-2623515965.webp");
+                background-size: cover;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-position: center;
+                
+            }
+            button
+            {
+                text-align: left;
+                
+            }
+            #npd12
+            {
+                background-color: aqua;
+                background: transparent;
+                font-size:medium;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                
+                width: 300px;
+                border: none;
+                box-shadow: 0 0 15px rgba(0,0,0,0.3);
+                border-radius: 15px;
+                
+                margin: 14px auto;
+                text-align:left;
+                padding-left: 80px;
+                padding-bottom: 100px;
+
+                padding-top: 100px;
+                padding-right: 80px;
+                margin-top: 140px;
+            }
+            #btn12
+            {
+                background-color: rgb(7, 249, 164);
+                color: black;
+                cursor: pointer;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            }
+            #btn12:hover
+            {
+                transform: scale(1.05);
+                box-shadow: 0 4px 13px black;
+            }
+            #btn22
+            {
+                background-color: rgb(246, 115, 8);
+                color: black;
+                cursor: context-menu;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            #btn22:hover
+            {
+                color: rgb(255, 0, 0);
+                box-shadow: 0 4px 13px black;
+            }
+        </style>
+    </head>
+    <body>
+      
+<pre id="npd12">
+Name:        <input type="textbox" name="raj46">
+
+Password:   <input type="password" id="raj48">
+        
+        
+<button type="button" onclick="virat()" id="btn12">Login</button>         <button type="reset" id="btn22">Reset</button>
+</pre>
+    </body>
+
+</html>
+
+<script lang="javascript">
+    function virat()
+    {
+    
+        var pass = document.getElementById("raj48").value
+        if(pass == "Student@2618")
+        {
+            alert("Successfully Logged in!")
+            setTimeout(function()
+            {
+                window.location.href = "Form1.html";
+                
+
+            },2000);
+        }
+        else
+        {
+            alert("Invalid Passcode!")
+        }
+    }
+</script>
+
+
