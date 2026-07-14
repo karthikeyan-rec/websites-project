@@ -1,0 +1,255 @@
+<html>
+    <head>
+        <title>Student Portal</title>
+        <link rel="icon" type="5850276.png/x-icon" href="5850276.png">
+        <style>
+            body
+            {
+                scroll-behavior:smooth;
+            }
+            #f12
+            {
+                color: rgb(0, 0, 0);
+            }
+            body
+            {
+                background-image: url("photo-1668853853439-923e013afff1.avif");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: scroll;
+                background-size: cover;
+                
+            }
+            h1
+            {
+                
+                text-align: center;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 36px;
+                box-shadow: 0 0 25px rgba(0,0,0,0.3);
+                border-style: inset;
+
+                border-radius: 8px;
+                padding: 2px;
+                border-width: 4px; 
+                border-color: rgb(255, 47, 0);
+                backface-visibility: visible;
+                background-image: url("abstract-unsaturated-very-light-blue-260nw-2623515965.webp");
+                color: rgb(105, 8, 53);
+            }
+            form{
+                    background:rgb(113, 205, 255);
+                    background: transparent;
+                    width:700px;
+                    margin:40px auto;
+                    padding:30px;
+                    border: none;
+                    border-radius:15px;
+                    box-shadow:0 0 15px rgba(0,0,0,0.3);
+                    
+                    }
+            #but21
+            {
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                color: rgb(0, 0, 0);
+                background-color: chartreuse;
+                border-radius: 12px;
+                padding: 7px;
+                padding-left: 7px;
+                padding-right: 7px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            #but21:hover
+            {
+                transform: scale(1.05);         
+                box-shadow:0 4px 13px black;       
+            }
+            #but22
+            {
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                color: rgb(0, 0, 0);
+                background-color: rgb(255, 0, 0);
+                border-radius: 12px;
+                padding: 8px;
+                padding-left: 8px;
+                padding-right: 8px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            #but22:hover
+            {
+                transform: scale(1.05);         
+                box-shadow:0 4px 13px black; 
+            }
+            footer
+            {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                background-color: #2c3e50;
+                color: aliceblue;
+                text-align: center;
+                margin-top: 40px;
+                padding: 20px;
+
+            }
+            footer a
+            {
+                color: white;
+                margin: 0 10px;
+            }
+            footer a:hover
+            {
+                color: rgb(247, 114, 5);
+            }
+        </style>
+    </head>
+    <body >
+        
+        <b>
+        <h1 id="top">Student Data Entry Form</h1></b>
+        </b>
+        <form name="f1" method="get" id="f12" onubmit="return dhoni()">
+            <pre>
+            <b>
+Registration Number:<span>*</span>     <input type="textbox" name="n3" placeholder="eg: 12345" maxlength="14" required>
+
+Enter your First Name:<span style="color: rgb(0, 0, 0);">*</span>   <input required type="textbox" name="n1">
+
+Enter your Last Name:<span style="color: rgb(0, 0, 0);">*</span>    <input type="textbox" name="n21">
+
+Enter your age:           <input type="number" name="a1">
+
+Date of Birth:            <input type="date" name="d1">
+
+Gender:                   <input type="radio" name="m1">Male
+
+                          <input type="radio" name="f1">Female
+
+                          <input type="radio" name="t1">Transgender
+
+E-mail:<span>*</span>                  <input type="email" name="e1" placeholder="eg: abc@gmail.com">
+
+Father's Name:            <input type="textbox" name="t2">
+
+Nationality:<span>*</span>             <select required>
+                            <option>INDIA</option>
+                            </select>
+
+State:                    <select>
+                            <option>TAMIL NADU</option>
+                          </select>
+
+City:                     <input type="textbox" name="t3">
+
+Pincode:                  <input type="textbox" name="p1" required maxlength="6">
+
+
+Department:               <select>
+                                <option>--Select--</option>
+                                <option>CSE</option>
+                                <option>EEE</option>
+                                <option>MECH</option>
+                                <option>ECE</option>
+                                <option>R&A</option>
+                                <option>MBA</option>
+                          </select>
+
+Year of Study:            <select>
+                                <option>--</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+
+Section:                  <select>
+                            <option>--</option>
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                            <option>D</option>
+                          </select>
+
+Community:                <select size="1" name="c1">
+                            <option>--Select--</option>
+                            <option>SC</option>
+                            <option>ST</option>
+                            <option>BC</option>
+                            <option>MBC</option>
+                            <option>OBC</option>
+                            <option></option>
+                        </select>
+
+Aadhar Card:<span>*</span>             <input type="file" name="ff1" required>
+                        
+Address:                
+                         <textarea rows="4" cols="25"></textarea>
+
+ID Proof's:<span style="color: rgb(0, 0, 0);">*</span>            
+                         <input type="checkbox">Aadhar Card
+                         <input type="checkbox">Driving License
+                         <input type="checkbox">Pan Card
+                         <input type="checkbox">Voter ID
+
+Upload Photo:            <input type="file">
+
+Password:<span>*</span>               <input type="password" required>
+
+Confirm Password:<span>*</span>       <input type="password">
+
+<input type="checkbox" required > <span>*</span>I confirm that all the information provided in this form is true and accurate. I understand
+    that providing false information may result in the rejection of my application.
+
+
+<input type="submit" value="submit" id="but21">    <input id="but22" type="reset" value="Clear"> 
+            </b>
+            </pre>
+        </form>
+        <footer>
+                <h3>About us</h3>
+                <p>
+                    Student Data Entry System is designed to securely collect 
+                    and manage student information for the educational purpose.
+                </p>
+                <h3>Contact us</h3>
+                <a href="https://workspace.google.com/intl/en_in/lp/gmail/?utm_source=Bing&utm_medium=cpc&utm_campaign=1713702-Workspace-DR-APAC-IN-en-Bing-BKWS-EXA-Hybrid-Gmail&utm_content=c-Hybrid+%7C+BKWS+-+EXA+%7C+Txt-Gmail-N/A+1-329871267&utm_term=gmail&gclid=3e721fa82d501adab39975fd1f424665&gclsrc=3p.ds&msclkid=3e721fa82d501adab39975fd1f424665">studentportal@gmail.com</a> <a href="#" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">+91 96237 14268</a>
+                
+
+                <h3>Quick Links</h3>
+
+                <a href="#top" class="anc12">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Help</a>
+                
+                <p>© 2026 Student Data Entry System. All Rights Reserved.</p>
+       
+        </footer>
+        
+    </body>
+</html>
+
+<script lang="javascript">
+
+function dhoni()
+{
+    var x;
+    x = f1.n1.value
+    if(x)
+    {
+       
+        alert(x+" Form's Submitted");
+        alert("Form Successfully Submitted!");
+        
+        window.location.href = "loginpage.html";
+        
+    }
+    else{
+        alert("Fill the form!")
+    }
+    
+    
+}
+</script>
