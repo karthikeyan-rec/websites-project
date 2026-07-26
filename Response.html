@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>Response Page</title>
+        <link rel="icon" class="round" href="ecf9ed1a-2269-4a2c-bb6c-c999cb917245.png" type="ecf9ed1a-2269-4a2c-bb6c-c999cb917245/x-icon">
+        <style>
+            #pr1
+            {
+                width: 300px;
+                background-color: aquamarine;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: medium;
+
+                background:transparent;
+                box-shadow: 0 0 14px black;
+                border: none;
+                margin: 14px auto;
+
+                border-radius: 15px;
+                padding-left: 80px;
+                padding-bottom: 100px;
+
+                padding-top: 100px;
+                padding-right: 80px;
+                opacity: initial;
+
+            }
+
+            #dt1:hover
+            {
+                color: red;
+                transform: scale(1.05);
+                
+            }
+            #sr1:hover
+            {
+                color: rgb(0, 255, 102);
+
+            }
+
+            body
+            {
+                
+                
+                background: url("abstract-green-background-with-dynamic-curves-free-vector.jpg");
+                background-position:center;
+                background-size: cover;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+
+                transition: all 0.6s ease-out, opacity 0.6s ease-out;
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            #p1
+            {
+                text-align: center;
+                
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            h2
+            {
+                text-align: center;
+            }
+
+            .bt1
+            {
+                background-color: #44e105;
+                
+                
+                border-radius: 1px;
+                border-style: outset;
+            }
+            .bt1:hover
+            {
+                
+                color: rgb(225, 235, 43);
+                box-shadow: 0 3px 24px rgba(74, 6, 62, 0.53);
+                transform: scale(1.05);
+                text-shadow: 0 3px 14px rgba(0, 0, 0, 0.53);
+
+            }
+            
+
+
+        </style>
+    </head>
+    <body id="content">
+        
+        <p id="p1">
+            <h2> Thank You</h2>
+            <hr>
+
+            <h2>Registration Successful</h2>
+        </p>
+
+        <pre id="pr1">
+            <p><b>Reference ID          :    </b>    <span id="ref12"></span></p>
+            <p><b>Register No            :       </b> <span id="r"></span></p>
+            <p><b>Student Name       :       </b> <span id="n"></span></p>
+            <p><b>Email                      :        </b><span id="e"></span></p>
+            <p><b>City                         :        </b><span id="c"></span></p>
+            <p><b>Phone Number      :   </b>     <span id="p"></span></p>
+        </pre>
+
+
+
+        <pre style="font-weight: bold;" id="pr2">
+            📅 Date & Time   :  <span id="dt1"></span>                Status:<b id="sr1">  ✅ Successfully Registered.</b>           📌 <b>Please note your Reference ID for future reference...</b>
+
+
+                                                                                <button  class="bt1" type="button"  onclick="call()">🏘️ Back to home</button>
+
+
+        </pre>
+                                                  
+       
+        <script>
+            document.getElementById("r").innerHTML = localStorage.getItem("regno");
+            document.getElementById("n").innerHTML = localStorage.getItem("name");
+            document.getElementById("e").innerHTML = localStorage.getItem("email");
+            document.getElementById("c").innerHTML = localStorage.getItem("city");
+            document.getElementById("p").innerHTML = localStorage.getItem("phone");
+            document.getElementById("dt1").innerHTML = localStorage.getItem("datetime");
+            document.getElementById("ref12").innerHTML =   Math.floor(Math.random() * 100000000);
+
+        function call()
+        {
+          
+                document.body.style.opacity = "0";
+                document.body.style.transform = "scale(1.2)";
+        
+            setTimeout(function(){
+
+                window.location.href = "index.html";
+            
+            },600);
+        }
+        </script>
+        
+    </body>
+</html>
