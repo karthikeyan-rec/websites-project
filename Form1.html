@@ -200,9 +200,9 @@ Upload Photo:            <input type="file">
 
 Phone Number:            <input type="tel" placeholder="123-456-7890" name="Phone" id="p1">
 
-Password:<span>*</span>               <input type="password" required>
+Create Password:<span>*</span>        <input type="password" id="pass" title="Password must be at least 8 characters and include an uppercase letter, a lowercase letter, a number, and a special character (@$!%*?&)." pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}" required >
 
-Confirm Password:<span>*</span>       <input type="password" required>
+Confirm Password:<span>*</span>       <input type="password" id="cpass" oninput="check()" required> <p id="msg" style="color: red;"></p>
 
 <input type="checkbox" required > <span>*</span>I confirm that all the information provided in this form is true and accurate. I understand
     that providing false information may result in the rejection of my application.
@@ -238,6 +238,29 @@ Confirm Password:<span>*</span>       <input type="password" required>
 
 <script lang="javascript">
 
+
+function check()
+{
+    let pswd = document.getElementById("pass").value;
+    let cpswd = document.getElementById("cpass").value;
+    let message = document.getElementById("msg");
+
+    if(cpswd=== "")
+    {
+        message.innerHTML = "";
+    }
+    else if(pswd===cpswd)
+    {
+        message.style.color = "green";
+        message.innerHTML = "✓ Passwords match";
+    }
+    else
+    {
+        message.style.color = "red";
+        message.innerHTML = "✗ Passwords do not match"
+    }
+}
+    
 function dhoni()
 {
     var x;
